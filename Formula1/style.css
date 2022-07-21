@@ -1,0 +1,52 @@
+.driver-card {
+    /* border: 2px solid green; */
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    /*height: 450px;*/
+}
+
+.line {
+    width: 98%;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+
+.driver-number{
+    left: auto;
+    bottom: auto;
+    height: 0;
+    width: 100%;
+    position :relative; /*added*/
+    z-index : -99 /*added*/
+}
+
+.flag {
+    margin: 0 5px 0 0 ;
+}
+
+.plus-div{
+    background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
+    background-repeat: repeat; 
+    height: 110px;
+    width: 99%;
+    margin: 0 5px 0 0 ;
+}
+
+.driver-number{
+    font-size: 80;
+}
+
+.pts-button{
+    width: 48%;
+    height: 35px;
+}
+
+.space-between{
+    display: flex; justify-content: space-between; padding: 10px 0; margin: 0; "
+}
