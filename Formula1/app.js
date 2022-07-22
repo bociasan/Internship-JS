@@ -16,8 +16,8 @@ drivers.forEach((driver, index) =>{
                 ${driver.points}       
             </div>
 
-            <div style="font-size: 30;">
-                pts
+            <div class="pts-div">
+                PTS
             </div>
 
         </div>
@@ -43,8 +43,8 @@ drivers.forEach((driver, index) =>{
 
     <div>${driver.team}</div> 
 
-    <div> 
-        <img src="${driver.image}" width=95%>
+    <div class="div-relative" >
+        <img src="${driver.image}" width=70% style="position: absolute; margin-left: 12%; ">
 
         <div class="driver-number">${driver.number}</div>
         <div class="plus-div"></div>
@@ -52,11 +52,10 @@ drivers.forEach((driver, index) =>{
 
 
     <div class="line"></div>
-
-            <div class="space-between">
-                <button class="pts-button">+</button>
-                <button class="pts-button">-</button>
-            </div>
+    <div class="space-between" style="position: relative;">
+        <button class="pts-button">+</button>
+        <button class="pts-button">-</button>
+    </div>
 
 
 </div> <!-- End card -->  `

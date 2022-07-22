@@ -33,20 +33,47 @@
 .plus-div{
     background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
     background-repeat: repeat; 
-    height: 110px;
+    height: 70%;
     width: 99%;
     margin: 0 5px 0 0 ;
+
+}
+
+.pts-div{
+    font-size: 25;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+
+.pts-button{
+    width: 49%;
+    height: 35px;
+    font-size: 30;
+    background-color: red;
+    color: black;
+    border-radius: 7px;
+}
+
+.space-between{
+    display: flex; 
+    justify-content: 
+    space-between; 
+    padding: 10px 0; 
+    margin: 0; 
+}
+
+.div-relative {
+    position: relative; 
+    height: 250px; 
+    display: flex; 
+    align-items: flex-end;
 }
 
 .driver-number{
     font-size: 80;
-}
-
-.pts-button{
-    width: 48%;
-    height: 35px;
-}
-
-.space-between{
-    display: flex; justify-content: space-between; padding: 10px 0; margin: 0; "
+    position: absolute; 
+    bottom: 0;
 }
