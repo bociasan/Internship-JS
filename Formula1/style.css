@@ -68,7 +68,9 @@
     color: #FFFFFF;
     padding: 20px;
     width: 48%;
+    height: 10px;
     border-radius: 7px;
+    line-height: 0;
 
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
