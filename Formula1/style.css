@@ -2,15 +2,22 @@
     border-top: 3px solid black;
     border-right: 3px solid black;
     border-top-right-radius: 15px;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     display: inline-block;
-    width: 460px;
+    width: 25em;
+
+    padding-top: 0px;
+    margin-top: 10px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .driver-card:hover{
     border-top: 3px solid red;
     border-right: 3px solid red;
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
 .line {
@@ -28,8 +35,8 @@
 .plus-div{
     background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x1.png");
     background-repeat: repeat; 
-    height: 87%;
-    width: 99%;
+    height: 15em;
+    width: 40em;
     margin: 0 5px 0 0 ;
 
 }
@@ -58,7 +65,7 @@
 
 .pts-button:hover{
     background-color: green;
-} 
+}
 
 .pts-button {
     position: relative;
@@ -66,39 +73,48 @@
     border: none;
     font-size: 28px;
     color: #FFFFFF;
-    padding: 20px;
-    width: 48%;
-    height: 10px;
-    border-radius: 7px;
-    line-height: 0;
+    height: inherit;
 
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .pts-button:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .pts-button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
+}
+
+/*.pts-button {*/
+/*    position: relative;*/
+/*    background-color: red;*/
+/*    border: none;*/
+/*    font-size: 28px;*/
+/*    color: #FFFFFF;*/
+/*    padding: 20px;*/
+/*    width: 48%;*/
+/*    height: 10px;*/
+/*    border-radius: 7px;*/
+/*    line-height: 0;*/
+
+/*    -webkit-transition-duration: 0.4s; !* Safari *!*/
+/*    transition-duration: 0.4s;*/
+/*    text-decoration: none;*/
+/*    overflow: hidden;*/
+/*    cursor: pointer;*/
+/*  }*/
+/*  */
+/*  .pts-button:after {*/
+/*    content: "";*/
+/*    background: #90EE90;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    padding-top: 300%;*/
+/*    padding-left: 350%;*/
+/*    margin-left: -20px!important;*/
+/*    margin-top: -120%;*/
+/*    opacity: 0;*/
+/*    transition: all 0.8s*/
+/*  }*/
+/*  */
+/*  .pts-button:active:after {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    opacity: 1;*/
+/*    transition: 0s*/
+/*  }*/
 
 
 .space-between{
@@ -128,4 +144,14 @@
 #driver-img{
     position: absolute; 
     margin-left: 27%;
+}
+
+.points-number{
+    font-size: 1.5em;
+    text-align: right;
+    align-self: center;
+}
+
+.pts-container{
+    font-size: 30;
 }
