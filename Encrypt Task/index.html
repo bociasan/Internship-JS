@@ -2,34 +2,30 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-
 <body>
     <div class="container">
         <div class="child">
             <p style="font-size: 50; text-align: center"> Chipher</p>
             <p> Enter your message here</p>
             <textarea class="message"></textarea>
-
             <p> Enter secret code</p>
-
             <textarea class="code"></textarea>
-
             <br />
             <div style="display: flex; justify-content: space-between">
-                <button class="encrypt-button">Encrypt</button>
-                <button class="decrypt-button">Decrypt</button>
+                <button class="encrypt-button" onclick="cripter(true)">Encrypt</button>
+                <button class="decrypt-button" onclick="cripter()">Decrypt</button>
             </div>
-
-            <p id="result"> </p>
+            <p id="result"> Your encrypted/decrypted message </p>
             <textarea class="encrypted-message"></textarea>
             <br />
-            <button class="copy-button">Copy text</button>
+            <div style="display: flex; justify-content: space-between">
+                <button class="copy-button">Copy text</button>
+                <button class="insert-button">Insert text</button>
+
+            </div>
+
         </div>
     </div>
-
-
-
 </body>
 <script type="text/javascript" src="app.js"></script>
 </html>
