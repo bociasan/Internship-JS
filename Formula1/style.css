@@ -1,3 +1,29 @@
+@font-face {
+    font-family: F1Black;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Black/Formula1-Black.woff2);
+}
+
+@font-face {
+    font-family: F1Wide;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Wide/Formula1-Wide.woff2);
+}
+
+@font-face {
+    font-family: F1Regular;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2);
+}
+
+@font-face {
+    font-family: F1Year;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2);
+}
+
+
+
+
+
+
+
 .driver-card {
     border-top: 3px solid black;
     border-right: 3px solid black;
@@ -42,20 +68,37 @@
 }
 
 .pts-div{
-    font-size: 30;
-    border-radius: 5px;
-    background-color: black;
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 0 0 auto;
+    padding: 1px 0 0;
     text-align: center;
-    color: white;
+    width: 70px;
+    font-family: F1Wide;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 400;
 }
 
 .driver-firstname{
-    font-size: 27;
+    font-family: F1Regular;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 400;
 }
 
 .driver-lastname{
-    font-size: 35;
-    font-weight: bold;
+    font-family: F1Bold;
+
+    line-height: 30px;
+
+
+    font-size: 2.4rem;
+
+
 }
 
 .team-name{
@@ -146,12 +189,28 @@
     margin-left: 27%;
 }
 
-.points-number{
-    font-size: 1.5em;
-    text-align: right;
+.driver-index{
+    font-family: F1Black;
+    font-size: 2.625rem;
     align-self: center;
 }
 
+.points-number{
+    /*font-family: F1Wide;*/
+    /*font-size: 1.5em;*/
+    /*text-align: right;*/
+    /*align-self: center;*/
+    font-family: F1Wide;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .pts-container{
-    font-size: 30;
+    /*font-size: 30;*/
+}
+
+.arrow-img{
+    /*width: 3em;*/
+    height: 2em;
+    padding: 0 10px 0 10px;
 }

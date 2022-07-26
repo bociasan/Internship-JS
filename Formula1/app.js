@@ -9,7 +9,7 @@ const container = document.querySelector('.drivers-container');
 drivers.forEach((driver, index) =>{
     let driverCard = `<div class="driver-card" >         
     <div style="display: flex; justify-content: space-between; ">
-        <div class="driver-index" style="font-size: 90; vertical-align: top; "> ${index+1} </div>
+        <div class="driver-index" style=""> ${index+1} </div>
       
             <div style="display: flex; flex-direction: row;align-items: center ">
                 <div class="pts-container"> 
@@ -20,8 +20,8 @@ drivers.forEach((driver, index) =>{
                 </div>
                 
                 <div style="display: flex; flex-direction: column; justify-content: space-between">
-                    <img class="add-img" src="arrow.png" style="width: 3em; height: 2.2em; padding: 0 10px 0 10px;">
-                    <img class="dec-img" src="arrow.png" style="width: 3em; height: 2.2em; transform: rotate(180deg); padding: 0 10px 0 10px;">
+                    <img class="arrow-img add-img" src="arrow.png">
+                    <img class="arrow-img dec-img" src="arrow.png" style="transform: rotate(180deg);">
                 </div>
             </div>
     </div>
