@@ -32,7 +32,7 @@ drivers.forEach((driver, index) =>{
             </canvas>
             <div>
                 <div class="driver-firstname">${driver.firstName}</div>
-                <div class="driver-lastname">${driver.lastName}</div>
+                <div class="driver-lastname">${driver.lastName.toUpperCase()}</div>
             </div>
         </div>
         <img class="flag" src="${flags.find((flag) => flag.country === driver.country).image}" width=20%>  
@@ -40,7 +40,7 @@ drivers.forEach((driver, index) =>{
     <div class="line"></div>
     <div class="team-name">${driver.team}</div> 
     
-    <div class="div-relative" style="height: 18em">
+    <div class="div-relative" style="height: 17em">
         <img id="driver-img" src="${driver.image}" style="height: 17em">
         <img class="driver-number" src="${numbers.find((number) => number.number === driver.number).image}">
         <div class="plus-div"></div>
