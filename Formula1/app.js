@@ -4,13 +4,12 @@ import { mockNumbers } from "../numbers.js";
 const drivers = [...mockData.sort((a,b) => b.points - a.points)];
 const flags = [...mockFlags];
 const numbers = [...mockNumbers];
-const container = document.querySelector('.drivers-container');
+const container = document.querySelector('.drivers-list');
 
 drivers.forEach((driver, index) =>{
     let driverCard = `<div class="driver-card" >         
     <div style="display: flex; justify-content: space-between; ">
         <div class="driver-index" style=""> ${index+1} </div>
-      
             <div style="display: flex; flex-direction: row;align-items: center ">
                 <div class="pts-container"> 
                     <div class="points-number">
@@ -47,20 +46,8 @@ drivers.forEach((driver, index) =>{
     </div>
 </div> <!-- End card -->  `
 
-
-
     container.innerHTML += driverCard
-
 })
-
-// container.querySelectorAll("#add-button").forEach((btn) => {
-//     btn.addEventListener("click", (e) => increaseScore(e));
-//     });
-//
-// container.querySelectorAll("#dec-button").forEach((btn) => {
-//     btn.addEventListener("click", (e) => decreaseScore(e));
-//     });
-
 
 container.querySelectorAll(".add-img").forEach((btn) => {
     btn.addEventListener("click", (e) => increaseScore(e));
@@ -71,10 +58,7 @@ container.querySelectorAll(".dec-img").forEach((btn) => {
     });
 
 container.querySelectorAll(".driver-card").forEach((driverCard) => {
-    // driverCard.addEventListener("onmouseover", (e) => changeBorderColor("green"));
     driverCard.addEventListener("mouseover", (e) => driverCard.style.borderColor =  driverCard.querySelector(".team-color").style.backgroundColor)
-
-
     driverCard.addEventListener("mouseout", (e) => driverCard.style.borderColor = "black");
 });
 
@@ -101,12 +85,6 @@ function verifySorting(){
         driverCard.querySelector(".driver-index").innerHTML = index+1
         container.appendChild(driverCard)
     })
-}
-
-function changeBorderColor (driverCard,color){
-    // this.style.backgroundColor = "blue";
-    //console.log(driverCard.style.borderColor = "green")
-
 }
 
 

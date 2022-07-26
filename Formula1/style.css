@@ -20,6 +20,21 @@
 
 body {
     cursor: url('f1car.png'),auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-div{
+    font-family: F1Black;
+    font-size: 62px;
+    line-height: 62px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-top-right-radius: 25px;
+    display: flex;
+    margin: 20px;
+
 }
 
 .driver-card {
@@ -54,6 +69,8 @@ body {
 
 .flag {
     margin: 0 5px 0 0 ;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .plus-div{
@@ -212,3 +229,13 @@ body {
     height: 2em;
     padding: 0 10px 0 10px;
 }
+
+.drivers-container{
+    max-width: 1500px;
+}
+
+/*.drivers-list{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-evenly;*/
+/*}*/
